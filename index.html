@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF--8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resortes Manuales - Fabricación a la medida</title>
     <meta name="description" content="En Resortes Manuales, se fabrican todo tipo de resortes y formas de alambre a la medida. Calidad y precisión en cada pieza.">
@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#"><i class="bi bi-gear-fill me-2"></i>Resortes Manuales</a>            
@@ -23,23 +22,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#quienes-somos">Quiénes Somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#servicios">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#productos">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-dark px-3 ms-lg-2" href="#contacto">Contáctanos</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#quienes-somos">Quiénes Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#clientes">Clientes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contáctanos</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <header id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -55,117 +46,67 @@
                 </div>
             </div>
             <div class="carousel-item c-item">
-                <img src="assets/resortes_colores.jpg" class="d-block w-100 c-img" alt="Resorte de torsión a la medida">
+                <img src="assets/resortes_colores.jpg" class="d-block w-100 c-img" alt="Resorte de torsión a la medida" loading="lazy">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="display-4">Precisión y Calidad</h5>
                     <p>Soluciones a la medida para la industria.</p>
                 </div>
             </div>
             <div class="carousel-item c-item">
-                <img src="https://placehold.co/1920x1080/555/white?text=Formas+de+Alambre" class="d-block w-100 c-img" alt="Formas de alambre personalizadas">
+                <img src="https://placehold.co/1920x1080/555/white?text=Formas+de+Alambre" class="d-block w-100 c-img" alt="Formas de alambre personalizadas" loading="lazy">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="display-4">Diseños Personalizados</h5>
                     <p>Materializamos tus ideas en alambre.</p>
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
     </header>
-
     <main>
-        <section id="quienes-somos" class="py-5">
+        <section id="quienes-somos" class="py-5" data-aos="fade-up">
             <div class="container text-center">
                 <h2 class="section-title"><i class="bi bi-people-fill me-2"></i>Quiénes Somos</h2>
                 <div class="row justify-content-center">
                     <div class="col-md-8">
-                        <p class="lead text-muted">Somos una empresa con más de 20 años de experiencia en la fabricación de resortes y formas de alambre. Nuestro compromiso es ofrecer productos de la más alta calidad, diseñados para cumplir con las especificaciones exactas de nuestros clientes.</p>
+                        <p class="lead text-muted">Somos una empresa con más de <span class="fw-bold display-4 text-dark" id="counter">20</span> años de experiencia en la fabricación de resortes y formas de alambre. Nuestro compromiso es ofrecer productos de la más alta calidad.</p>
                     </div>
                 </div>
             </div>
         </section>
-
         <section id="servicios" class="py-5 bg-light" data-aos="fade-up">
             <div class="container text-center">
                 <h2 class="section-title"><i class="bi bi-tools me-2"></i>Nuestros Servicios</h2>
                 <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="card h-100 shadow-sm border-0">
-                            <div class="card-body">
-                                <i class="bi bi-gear-wide-connected fs-1 text-dark"></i>
-                                <h5 class="card-title mt-3">Diseño a Medida</h5>
-                                <p class="card-text">Trabajamos contigo para diseñar el resorte o la forma de alambre perfecta para tu aplicación.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card h-100 shadow-sm border-0">
-                            <div class="card-body">
-                                <i class="bi bi-lightning-charge fs-1 text-dark"></i>
-                                <h5 class="card-title mt-3">Producción Rápida</h5>
-                                <p class="card-text">Procesos optimizados para entregar tus pedidos en tiempo récord sin sacrificar la calidad.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card h-100 shadow-sm border-0">
-                            <div class="card-body">
-                                <i class="bi bi-patch-check fs-1 text-dark"></i>
-                                <h5 class="card-title mt-3">Garantía de Calidad</h5>
-                                <p class="card-text">Cada pieza pasa por un riguroso control de calidad para asegurar su durabilidad y funcionamiento.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="col-md-4"><div class="card service-card h-100"><div class="card-body"><i class="bi bi-gear-wide-connected service-icon"></i><h5 class="card-title mt-3">Diseño a Medida</h5><p class="card-text">Trabajamos contigo para diseñar el resorte o la forma de alambre perfecta para tu aplicación.</p></div></div></div>
+                    <div class="col-md-4"><div class="card service-card h-100"><div class="card-body"><i class="bi bi-lightning-charge service-icon"></i><h5 class="card-title mt-3">Producción Rápida</h5><p class="card-text">Procesos optimizados para entregar tus pedidos en tiempo récord sin sacrificar la calidad.</p></div></div></div>
+                    <div class="col-md-4"><div class="card service-card h-100"><div class="card-body"><i class="bi bi-patch-check service-icon"></i><h5 class="card-title mt-3">Garantía de Calidad</h5><p class="card-text">Cada pieza pasa por un riguroso control de calidad para asegurar su durabilidad y funcionamiento.</p></div></div></div>
                 </div>
             </div>
         </section>
-
         <section id="productos" class="py-5" data-aos="fade-up">
             <div class="container text-center">
                 <h2 class="section-title"><i class="bi bi-box-seam me-2"></i>Catálogo de Productos</h2>
                 <div class="row g-4">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card product-card">
-                            <img src="https://placehold.co/400x300/ddd/333?text=Compresión" class="card-img-top" alt="Resorte de compresión">
-                            <div class="card-body">
-                                <h5 class="card-title">Resortes de Compresión</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card product-card">
-                            <img src="https://placehold.co/400x300/ddd/333?text=Tensión" class="card-img-top" alt="Resorte de tensión">
-                            <div class="card-body">
-                                <h5 class="card-title">Resortes de Tensión</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card product-card">
-                            <img src="https://placehold.co/400x300/ddd/333?text=Torsión" class="card-img-top" alt="Resorte de torsión">
-                            <div class="card-body">
-                                <h5 class="card-title">Resortes de Torsión</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card product-card">
-                            <img src="https://placehold.co/400x300/ddd/333?text=Formas" class="card-img-top" alt="Formas de alambre">
-                            <div class="card-body">
-                                <h5 class="card-title">Formas de Alambre</h5>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="col-md-6 col-lg-3"><div class="card product-card"><img src="https://placehold.co/400x300/ddd/333?text=Compresión" class="card-img-top" alt="Resorte de compresión" loading="lazy"><div class="card-body"><h5 class="card-title">Resortes de Compresión</h5></div></div></div>
+                    <div class="col-md-6 col-lg-3"><div class="card product-card"><img src="https://placehold.co/400x300/ddd/333?text=Tensión" class="card-img-top" alt="Resorte de tensión" loading="lazy"><div class="card-body"><h5 class="card-title">Resortes de Tensión</h5></div></div></div>
+                    <div class="col-md-6 col-lg-3"><div class="card product-card"><img src="https://placehold.co/400x300/ddd/333?text=Torsión" class="card-img-top" alt="Resorte de torsión" loading="lazy"><div class="card-body"><h5 class="card-title">Resortes de Torsión</h5></div></div></div>
+                    <div class="col-md-6 col-lg-3"><div class="card product-card"><img src="https://placehold.co/400x300/ddd/333?text=Formas" class="card-img-top" alt="Formas de alambre" loading="lazy"><div class="card-body"><h5 class="card-title">Formas de Alambre</h5></div></div></div>
                 </div>
             </div>
         </section>
-
+        <section id="clientes" class="py-5 bg-light" data-aos="fade-up">
+            <div class="container text-center">
+                <h2 class="section-title">Han Confiado en Nosotros</h2>
+                <div class="d-flex flex-wrap justify-content-center align-items-center">
+                    <img src="https://placehold.co/150x80/cccccc/333333?text=Cliente+A" alt="Logo Cliente A" class="client-logo" loading="lazy">
+                    <img src="https://placehold.co/150x80/cccccc/333333?text=Cliente+B" alt="Logo Cliente B" class="client-logo" loading="lazy">
+                    <img src="https://placehold.co/150x80/cccccc/333333?text=Cliente+C" alt="Logo Cliente C" class="client-logo" loading="lazy">
+                    <img src="https://placehold.co/150x80/cccccc/333333?text=Cliente+D" alt="Logo Cliente D" class="client-logo" loading="lazy">
+                    <img src="https://placehold.co/150x80/cccccc/333333?text=Cliente+E" alt="Logo Cliente E" class="client-logo" loading="lazy">
+                </div>
+            </div>
+        </section>
         <section id="contacto" class="py-5 bg-dark text-white" data-aos="fade-up">
             <div class="container">
                 <div class="text-center">
@@ -175,33 +116,9 @@
                 <div class="row mt-5">
                     <div class="col-lg-5 mb-5 mb-lg-0">
                         <h4 class="mb-4">Información de Contacto</h4>
-                        
-                        <div class="d-flex align-items-start mb-3">
-                            <i class="bi bi-geo-alt-fill fs-4 me-3"></i>
-                            <div>
-                                <strong>Ubicación:</strong><br>
-                                <a href="https://maps.app.goo.gl/o7jpPB96MZxvKu8C7?g_st=aw" target="_blank" class="text-white text-decoration-none">
-                                    Avenida 8 poniente 2113, C.P. 72090, Puebla, PUE.
-                                </a>
-                            </div>
-                        </div>
-        
-                        <div class="d-flex align-items-start mb-3">
-                            <i class="bi bi-telephone-fill fs-4 me-3"></i>
-                            <div>
-                                <strong>Teléfono:</strong><br>
-                                <a href="tel:+522225963824" class="text-white text-decoration-none">222 596 3824</a>
-                            </div>
-                        </div>
-        
-                        <div class="d-flex align-items-start mb-4">
-                            <i class="bi bi-envelope-open-fill fs-4 me-3"></i>
-                            <div>
-                                <strong>Correo Electrónico:</strong><br>
-                                <a href="mailto:resortese@hotmail.com" class="text-white text-decoration-none">resortese@hotmail.com</a>
-                            </div>
-                        </div>
-        
+                        <div class="d-flex align-items-start mb-3"><i class="bi bi-geo-alt-fill fs-4 me-3"></i><div><strong>Ubicación:</strong><br><a href="https://maps.app.goo.gl/o7jpPB96MZxvKu8C7?g_st=aw" target="_blank" class="text-white text-decoration-none">Avenida 8 poniente 2113, C.P. 72090, Puebla, PUE.</a></div></div>
+                        <div class="d-flex align-items-start mb-3"><i class="bi bi-telephone-fill fs-4 me-3"></i><div><strong>Teléfono:</strong><br><a href="tel:+522225963824" class="text-white text-decoration-none">222 596 3824</a></div></div>
+                        <div class="d-flex align-items-start mb-4"><i class="bi bi-envelope-open-fill fs-4 me-3"></i><div><strong>Correo Electrónico:</strong><br><a href="mailto:resortese@hotmail.com" class="text-white text-decoration-none">resortese@hotmail.com</a></div></div>
                         <h4 class="mt-5 mb-3">Síguenos en Redes</h4>
                         <div class="social-icons">
                             <a href="http://facebook.com/resortese" target="_blank" class="text-white me-3 fs-3"><i class="bi bi-facebook"></i></a>
@@ -209,42 +126,31 @@
                             <a href="https://www.tiktok.com/@resortesmanuales?_t=ZS-90dFbjrvsN0&_r=1" target="_blank" class="text-white fs-3"><i class="bi bi-tiktok"></i></a>
                         </div>
                     </div>
-        
                     <div class="col-lg-7">
-                        <form action="https://formsubmit.co/tu-correo@dominio.com" method="POST">
-                            <input type="hidden" name="_next" value="https://TU_USUARIO.github.io/TU_REPOSITORIO/">
-                            <input type="hidden" name="_captcha" value="false">
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" id="name" name="name" required>
-                            </div>
-                            <div class="mb-3">
+                        <form id="contact-form" action="https://formsubmit.co/resortese@hotmail.com" method="POST">
+                            <div id="form-result"></div>
+                            <div class="mb-3 position-relative">
                                 <label for="email" class="form-label">Correo Electrónico</label>
                                 <input type="email" class="form-control" id="email" name="email" required>
+                                <span class="validation-icon"></span>
                             </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Mensaje</label>
-                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-light w-100">Enviar Mensaje</button>
+                            <div class="mb-3"><label for="name" class="form-label">Nombre</label><input type="text" class="form-control" id="name" name="name" required></div>
+                            <div class="mb-3"><label for="message" class="form-label">Mensaje</label><textarea class="form-control" id="message" name="message" rows="5" required></textarea></div>
+                            <button type="submit" class="btn btn-accent w-100" id="submit-button">
+                                <span class="button-text">Enviar Mensaje</span>
+                                <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                            </button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
-    <footer class="py-4 bg-black text-white text-center">
-        <div class="container">
-            <p class="mb-0">&copy; <span id="current-year"></span> Resortes Manuales. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <footer class="py-4 bg-black text-white text-center"><p class="mb-0">© <span id="current-year"></span> Resortes Manuales. Todos los derechos reservados.</p></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
-    <a href="https://api.whatsapp.com/send?phone=522225963824&text=Hola!%20Quisiera%20más%20información." class="whatsapp-flotante" target="_blank">
-        <i class="bi bi-whatsapp"></i>
-    </a>
+    <a href="https://api.whatsapp.com/send?phone=522225963824&text=Hola!%20Quisiera%20más%20información." class="whatsapp-flotante" target="_blank"><i class="bi bi-whatsapp"></i></a>
 </body>
 </html>

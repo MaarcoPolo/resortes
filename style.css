@@ -1,0 +1,96 @@
+/* ======== ESTILOS GENERALES Y TIPOGRAFÍA ======== */
+:root {
+    --bs-body-font-family: 'Poppins', sans-serif;
+}
+
+/* Habilita el scroll suave en toda la página */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px; /* Ajuste para el navbar fijo */
+}
+
+body {
+    font-family: var(--bs-body-font-family);
+}
+
+.section-title {
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ======== ESTILOS DEL CARRUSEL ======== */
+.c-item {
+    height: 100vh; /* Altura completa de la pantalla */
+    min-height: 480px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
+    filter: brightness(0.6); /* Oscurece la imagen para que el texto resalte */
+}
+
+.carousel-caption {
+    bottom: 25%; /* Posiciona el texto más centrado */
+}
+
+/* ======== ESTILOS DE SERVICIOS ======== */
+#servicios .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#servicios .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1) !important;
+}
+
+/* ======== ESTILOS DE PRODUCTOS (INTERACTIVOS) ======== */
+.product-card {
+    overflow: hidden; /* Oculta lo que se salga de la tarjeta */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.1); /* Efecto de zoom en la imagen */
+}
+
+
+/* ======== ESTILOS DE CONTACTO ======== */
+#contacto .form-control {
+    background-color: #495057;
+    color: white;
+    border: 1px solid #6c757d;
+}
+
+#contacto .form-control:focus {
+    background-color: #495057;
+    color: white;
+    border-color: #fff;
+    box-shadow: none;
+}
+
+#contacto .form-control::placeholder {
+    color: #ced4da;
+}
+
+.social-icons a {
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #adb5bd !important; /* Un gris claro para el efecto hover */
+}
